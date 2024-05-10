@@ -75,9 +75,7 @@
     transform: scale(0.9);
   }
 }
-.hidden {
-            display: none;
-        }
+
         #myGif {
     width: 100vw;
     height: 100vh;
@@ -87,19 +85,9 @@
     </style>
 </head>
 <body>
-    <div class="lds-heart"><div></div></div>
-    <img id="myGif" src="gif.gif" class="hidden">
+    
+    <img id="myGif" src="my.gif" class="hidden">
 
-    <script>
-        // Get the loader and GIF elements
-        var loader = document.querySelector('.lds-heart');
-        var gif = document.getElementById('myGif');
-
-        // Hide the loader and show the GIF after 3 seconds
-        setTimeout(function() {
-            loader.style.display = 'none';
-            gif.classList.remove('hidden');
-        }, 4000); // 3000 milliseconds = 3 seconds
-    </script>
+    
 </body>
 </html>
